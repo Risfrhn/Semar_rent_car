@@ -48,7 +48,7 @@ class BlogController extends Controller
 
     public function blogPageUser(){
         $data = $this->blogService->getAll();
-        return view('blogPage', [
+        return view('User.blogPage', [
             'status'=> $data['status'],
             'message' => $data['message'],
             'data' => $data['data'] ?? null,

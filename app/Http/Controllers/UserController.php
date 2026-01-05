@@ -68,7 +68,7 @@ class UserController extends Controller
                 'time' => '2024-12-25'
             ],
         ];
-        return view('landingPageUser', [
+        return view('User.landingPageUser', [
             'dataCatalog'=>$dataCatalog['data'],
             'reviews'=>$reviews
         ]);

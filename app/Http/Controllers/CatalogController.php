@@ -40,7 +40,7 @@ class CatalogController extends Controller
             'harga_max' => $request->filled('harga_max') ? $request->harga_max : null,
         ];
         $dataCatalog = $this->mobilService->getAllData($keyword, $filters);
-        return view('katalogPage', [
+        return view('User.katalogPage', [
             'message' => $dataCatalog['message'],
             'status' => $dataCatalog['status'],
             'dataCatalog' => $dataCatalog['dataPaginate'] ?? null,

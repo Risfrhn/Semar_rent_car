@@ -25,7 +25,7 @@ class PromoController extends Controller
 
     public function promoPageUser(){
         $data = $this->promoService->getAll();
-        return view('promoPage', [
+        return view('User.promoPage', [
             'status'=> $data['status'],
             'message' => $data['message'],
             'data' => $data['data'] ?? null
